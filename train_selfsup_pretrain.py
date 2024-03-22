@@ -164,8 +164,8 @@ def get_args_parser():
         data is 96 (input image 224), but has to be adapted for other FSL datasets of input size 84!""")
 
     # Dataset related parameters
-    parser.add_argument('--dataset', default='miniimagenet', type=str,
-                        choices=['miniimagenet', 'tieredimagenet', 'fc100', 'cifar_fs'],
+    parser.add_argument('--dataset', default='Ocean', type=str,
+                        choices=['miniimagenet', 'tieredimagenet', 'fc100', 'cifar_fs', 'Ocean'],
                         help='Please specify the name of the dataset to be used for training.')
     parser.add_argument('--data_path', default=None, type=str,
                         help='Please specify path to the root folder containing the training dataset(s). If dataset '
